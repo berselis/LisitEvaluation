@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using System.IO;
+
 namespace RegisterApp
 {
     public class Program
@@ -13,7 +15,13 @@ namespace RegisterApp
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+
+                    webBuilder.UseIISIntegration();
                     webBuilder.UseStartup<Startup>();
+                    
                 });
+            
+
+
     }
 }
