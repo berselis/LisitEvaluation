@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
+   
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a href="https://lisit.cl/" target="_blank">
+                    <img alt="Logo Lisit - Empresa de tecnología y consultoría it en Chile"   class="logoLisit" src="https://lisit.cl/wp-content/uploads/2020/12/LogoLisit02.png">
+                </a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">RegisterApp</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                           
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-9">
+                    <h6 class="text-center">
+                        <strong> Nov/2022 - Prueba técnica realizada por Berselis Jhosmar Mendoza Medina</strong>
+                    </h6>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <a href="http://www.lisit.cl/" style="color:rgb(0,0,0);font-size:9pt" target="_blank">
+                        <img class="logo-footer" src="https://dl.dropbox.com/s/5np52yg7srr9kl9/Gif%20Lisit.gif"></a>
+                </div>
+            </div>
+        
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
