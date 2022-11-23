@@ -14,8 +14,7 @@ namespace RegisterApp.Controllers
 {
     public class HomeController : Controller
     {
-        //c84d18c1-145e-42aa-9694-fd0dceb66f7a
-        //lisituser
+        
         private readonly RegisterAppLisitDBContext DB;
         private readonly IMapper mapper;
 

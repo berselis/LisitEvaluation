@@ -69,25 +69,17 @@
     </div>
 </div>
 <script type="text/javascript">
+    const employtable = document.getElementById('EmployTable');
+    const rows = employtable.lastElementChild.childElementCount;
 
     document.addEventListener('DOMContentLoaded', () => {
-        const employtable = document.getElementById('EmployTable');
-        const rows = employtable.lastElementChild.childElementCount;
-
-        if (rows > 0) {
+        if (rows > 1) {
             let table = new DataTable(employtable, {
-            
                 language:{
                     url:'https://cdn.datatables.net/plug-ins/1.13.1/i18n/es-ES.json'
                 }
             });
         }
-
-
-
-
-
-
     });
 
 
